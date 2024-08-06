@@ -27,7 +27,7 @@ public class Test2
 		double b=a;
 		System.out.println(a);
 		System.out.println(b); //Widening casting, automatically*/ 
-		double a=9.78d;
+		double a=9.78D;
 		int b=(int)a;
 		System.out.println(a);
 		System.out.println(b); //Narrowing casting, manually 
