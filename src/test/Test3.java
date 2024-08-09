@@ -31,15 +31,16 @@ public class Test3
 		System.out.print("min: "); System.out.println(Math.min(a,b));
 		System.out.print("sqrt: "); System.out.println(Math.sqrt(a)+", "+Math.sqrt(b));
 		System.out.print("abs: "); System.out.println(Math.abs(c));
-		System.out.print("random1: "); System.out.println(Math.random());
-		System.out.print("random2: "); System.out.println((int)(Math.random()*101));
+		System.out.print("Math.random() 1: "); System.out.println(Math.random());
+		System.out.print("Math.random() 2 err: "); System.out.println((int)Math.random()*101);
+		System.out.print("Math.random() 2: "); System.out.println((int)(Math.random()*101));
 		
 		Random random=new Random(); //create obj for class Random
 		int randomN=random.nextInt(10);
-		System.out.print("\npseudo Random: "); System.out.println(randomN);
+		System.out.print("\njava.util.Random(): "); System.out.println(randomN);
 		
 		random = new Random(1);
-		System.out.print("\npseudo Random with seed 1: "); System.out.println(random.nextInt(10));
+		System.out.print("\njava.util.Random() w/ seed 1: "); System.out.println(random.nextInt(10));
 		
 	
 		System.out.print("\nTesting boolean expression: \n");
